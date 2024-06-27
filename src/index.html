@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header sticky-header">
+            <div class="hamburger-menu" id="hamburger-menu">
+                ☰
+            </div>
+            <h3>VENIA</h3>
+            <ul class="header_list" id="header_list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html?category=women's%20clothing">Women</a></li>
+                <li><a href="index.html?category=men's%20clothing">Men</a></li>
+                <li><a href="index.html?category=jewelery">Accessories</a></li>
+            </ul>
+            <img src="./assets/bag.svg" alt="bag" class="bag" />
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar" id="sidebar-content">
+                All Categories
+            </div>
+            <div>
+                <img src="./assets/jeans.jpg" alt="jeans" class="sidebar_img" />
+            </div>
+        </div>
+    </header>
+    <div class="searchBar">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search products...">
+    </div>
+    <div class="filters">
+        <div class="filter-category">
+            <div class="fill">Filters</div>
+            <div class="fill">Categories</div>
+            <label><input type="checkbox" class="category-filter" value="men's clothing"> Men's Clothing</label>
+            <label><input type="checkbox" class="category-filter" value="women's clothing"> Women's Clothing</label>
+            <label><input type="checkbox" class="category-filter" value="jewelery"> Jewelery</label>
+            <label><input type="checkbox" class="category-filter" value="electronics"> Electronics</label>
+        </div>
+        <div>
+            <div class="results">
+                <div id="result-count" class="res"></div>
+                <div class="selectCategory">
+                    <select id="sort-options" class="select">
+                        <option value="none">Sort By Price</option>
+                        <option value="price-asc"> Low to High</option>
+                        <option value="price-desc"> High to Low</option>
+                        <!-- <option value="rating-asc"> Low to High</option>
+                            <option value="rating-desc"> High to Low</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="container" id="product-container"></a></div>
+            <button id="load-more" class="load-more">Load More</button>
+            <div id="loading" class="loading">Loading...</div>
+        </div>
+    </div>
+    <section>
+        <hr />
+        <div class="footer">
+            <ul class="footer_list">
+                <li class="account">Account</li>
+                <li class="footer_list_items">Sign in</li>
+                <li class="footer_list_items">Order</li>
+                <li class="footer_list_items">Register status</li>
+            </ul>
+            <ul class="footer_list">
+                <li class="account">About Us</li>
+                <li class="footer_list_items">Our Story</li>
+                <li class="footer_list_items">Careers</li>
+            </ul>
+            <ul class="footer_list">
+                <li class="account">Help</li>
+                <li class="footer_list_items">Contact Us</li>
+                <li class="footer_list_items">Order Status</li>
+                <li class="footer_list_items">Returns</li>
+            </ul>
+            <ul class="footer_list">
+                <li class="account">Follow us!</li>
+                <li class="footer_list_item">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.Doloribus enim corporis provident itaque voluptatem officiis!
+                </li>
+                <img src="assets/instagram-logo.svg" class="insta" alt="instagram" />
+                <img src="assets/facebook.svg" class="facebook" alt="facebook" />
+                <img src="assets/twitter.svg" class="insta" alt="twitter" />
+            </ul>
+        </div>
+    </section>
+    <hr />
+    <footer class="final_footer">
+        <h3>VENIA </h3>
+        <p>&copy; Company Name Address Ave,City name, Zip code, State</p>
+        <div>
+            <ul class="header_lists">
+                <li>
+                    Terms Of Policy
+                </li>
+                <li>
+                    Privacy Policy
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
