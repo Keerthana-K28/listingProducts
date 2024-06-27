@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Cards</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
@@ -16,50 +18,80 @@
             </div>
             <h3>VENIA</h3>
             <ul class="header_list" id="header_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html?category=women's%20clothing">Women</a></li>
-                <li><a href="index.html?category=men's%20clothing">Men</a></li>
-                <li><a href="index.html?category=jewelery">Accessories</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html?category=women's%20clothing">Women</a></li>
+                <li><a href="home.html?category=men's%20clothing">Men</a></li>
+                <li><a href="home.html?category=jewelery">Accessories</a></li>
             </ul>
             <img src="./assets/bag.svg" alt="bag" class="bag" />
         </div>
-        <div class="sidebar-content">
-            <div class="sidebar" id="sidebar-content">
-                All Categories
-            </div>
-            <div>
-                <img src="./assets/jeans.jpg" alt="jeans" class="sidebar_img" />
-            </div>
-        </div>
     </header>
-    <div class="searchBar">
-        <input type="text" id="search-bar" class="search-bar" placeholder="Search products...">
-    </div>
-    <div class="filters">
-        <div class="filter-category">
-            <div class="fill">Filters</div>
-            <div class="fill">Categories</div>
-            <label><input type="checkbox" class="category-filter" value="men's clothing"> Men's Clothing</label>
-            <label><input type="checkbox" class="category-filter" value="women's clothing"> Women's Clothing</label>
-            <label><input type="checkbox" class="category-filter" value="jewelery"> Jewelery</label>
-            <label><input type="checkbox" class="category-filter" value="electronics"> Electronics</label>
+
+    <div class="page-content">
+        <div class="content-wrap">
+            <div class="title">
+                <span>Shop the new <br /> Signature collection </span>
+                <p>Lorem ipsum dolor sit amet. Et veritatis asperiores qui minus facilis est placeat accusantium non
+                    itaque enim? Id assumenda omnis non rerum quas est aliquid fuga et rerum quibusdam.</p>
+                <a href="./home.html">
+                    <button class="shopNow">Shop Now</button>
+                </a>
+            </div>
+            <div class="group">
+                <img src="./assets/group.png" alt="group">
+            </div>
         </div>
-        <div>
-            <div class="results">
-                <div id="result-count" class="res"></div>
-                <div class="selectCategory">
-                    <select id="sort-options" class="select">
-                        <option value="none">Sort By Price</option>
-                        <option value="price-asc"> Low to High</option>
-                        <option value="price-desc"> High to Low</option>
-                        <!-- <option value="rating-asc"> Low to High</option>
-                            <option value="rating-desc"> High to Low</option> -->
-                    </select>
+        <div class="productwrap">
+            <div class="productwrapsection">
+                <div class="productss">
+                    <img src="./assets/women.png"class="productd"  />
+                    <div class="Electronics_style">
+                        <h2 class="women">Shop Women</h2>
+                        <p class="womens">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="productss">
+                    <img src="./assets/men.png"class="productd"  />
+                    <div class="Electronics_style">
+                        <h2 class="women">Shop Men</h2>
+                        <p class="womens">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="productss">
+                    <img src="./assets/diamond.png"class="productd" />
+                    <div class="Electronics_style">
+                        <h2 class="women">Jewellery</h2>
+                        <p class="womens">Lorem ipsum dolor sit amet</p>
+                    </div>
                 </div>
             </div>
-            <div class="container" id="product-container"></a></div>
-            <button id="load-more" class="load-more">Load More</button>
-            <div id="loading" class="loading">Loading...</div>
+        </div>
+        <div class="takeOff2">
+            <div class="takeOff">
+                <div class="take">Take off in the new</div>
+                <div class="take">Signature Legging </div>
+                <p>Lorem ipsum dolor sit amet. Et veritatis asperiores qui minus facilis est placeat Lorem ipsum dolor
+                    sit amet. Et veritatis asperiores qui minus facilis est placeat</p>
+                <div>
+                    <a href="./home.html">
+                        <button class="shops">Shop Now</button>
+                    </a>
+                    <button class="shopsy">Shop collection</button>
+
+                </div>
+            </div>
+            <div class="boy">
+                <img src="./assets/boy.png" alt="boy">
+            </div>
+        </div>
+        <div class="manOnhill">
+            <img src="./assets/manOnhill.png" alt="manonHill" />
+            <div class="conquer">
+                <div>
+                    <p class="conquer_p">Conquer your <br /> next adventure</p>
+                    <button class="conquer_b">Shop devices</button>
+                </div>
+            </div>
         </div>
     </div>
     <section>
@@ -109,7 +141,6 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
-
 </body>
 
 </html>

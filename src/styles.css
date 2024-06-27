@@ -8,11 +8,13 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.bag{
+
+.bag {
     height: 30px;
     margin-top: 14px;
     color: red;
 }
+
 .header {
     background-color: rgb(19 99 223);
     color: white;
@@ -44,6 +46,7 @@ body {
 .header_lists li {
     display: inline-block;
     margin-right: 15px;
+    text-decoration: underline;
 }
 
 .header_list a {
@@ -172,6 +175,7 @@ body {
 }
 
 .card {
+    background-color: #f1eded;
     border-radius: 8px;
     width: 250px;
     padding: 20px;
@@ -247,6 +251,196 @@ body {
     margin-right: 45px;
 }
 
+.manOnhill {
+    padding: 4% 16%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.manOnhill img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.conquer {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.conquer_p {
+    font-size: 28px;
+}
+
+.conquer_b {
+    padding: 10px 40px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+.boy {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.boy img {
+    width: 100%;
+    height: 100%;
+}
+
+.takeOff {
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.take {
+    font-size: 25px;
+}
+
+.takeOff2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    padding: 1% 10%;
+}
+
+.shops {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #007bff !important;
+    color: white !important;
+    border: 2px solid #007bff !important;
+    border-radius: 6px;
+    padding: 8px 40px;
+    /* width: 50%; */
+}
+
+.shopsy {
+    border: 2px solid #007bff !important;
+    background-color: white;
+    border-radius: 6px;
+    color: #007bff;
+    padding: 8px 40px;
+}
+
+.Electronics_style {
+    color: white;
+    position: relative;
+    bottom: 60px;
+    padding: 2px 20px;
+    background-color: #393838;
+    margin: 0px 1px;
+    opacity: 90%;
+}
+
+.women{
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.womens{
+    margin: 10px 0;
+    color: #777;
+    white-space: nowrap;
+    color: white;
+    font-size: 12px;
+    opacity: 50%;
+}
+
+.productss {
+    flex: 1 1 22%;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.productd {
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+.productwrap {
+    padding: 1% 10%;
+}
+
+.productwrapsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #f8f8f8;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}
+
+.group {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.group img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+}
+
+.title {
+    flex: 1 1 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(240, 236, 236);
+    padding: 5% 7%;
+}
+
+.title span {
+    font-size: 40px;
+}
+
+.shopNow  {
+    padding: 10px 60px;
+    color: white;
+    background-color: #007bff;
+    border-color: #007BFF;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.page-content {
+    margin-top: 20px;
+}
+
+
+
 
 /* Responsive styles */
 @media (max-width: 1400px) {
@@ -277,6 +471,10 @@ body {
     .filter-category {
         display: none;
     }
+
+    .page-content {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -287,12 +485,83 @@ body {
     }
 
     .final_footer {
-        display: block;
+        display: flex;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
     .load-more {
         width: 30%;
+    }
+
+    .manOnhill {
+        flex-direction: column;
+        padding: 1% 5%;
+        text-align: center;
+    }
+
+    .manOnhill img {
+        width: 100%;
+        height: auto;
+    }
+
+    .conquer {
+        position: relative;
+        top: -10px;
+        left: 0;
+        transform: none;
+        margin-top: -20px;
+        width: 200px;
+
+    }
+
+    .conquer_p {
+        font-size: 15px;
+    }
+
+    .takeOff2 {
+        flex-direction: column-reverse;
+        padding: 1% 5%;
+    }
+
+    .boy,
+    .takeOff {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .shops {
+        padding: 8px 20px;
+        width: 100%;
+    }
+
+    .shopsy {
+        padding: 8px 20px;
+        width: 100%;
+    }
+
+    .productss {
+        flex: 1 1 48%;
+    }
+
+    .productwrapsection {
+        top: 0%;
+    }
+
+    .content-wrap {
+        display: block;
+    }
+
+    .title {
+        max-width: 100%;
+    }
+
+    .page-content {
+        margin-top: 70px;
+    }
+
+    .group {
+        display: none;
     }
 }
 
@@ -322,12 +591,42 @@ body {
     }
 
     .sidebar_img {
-        display: none;
+        height: 150px;
+        width: 103%;
     }
+
     .sidebar {
-        display: none;
+        height: 100px;
     }
+
     .search-bar {
-        margin-top: 10px;
+        margin-top: 60px;
+    }
+
+    .productss {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width:320px) {
+    .sidebar_img {
+        height: 150px;
+        width: 104%;
+    }
+
+    .sidebar {
+        width: 50%;
+        right: 25%;
+        top: 60%;
+        height: 100px;
+        margin-left: 20px;
+    }
+
+    .search-bar {
+        margin-top: 40px;
+    }
+
+    .conquer {
+        width: 160px;
     }
 }

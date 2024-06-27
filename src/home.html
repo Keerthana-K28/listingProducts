@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
+    <title>Product Cards</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="header sticky-header">
@@ -14,23 +17,53 @@
             </div>
             <h3>VENIA</h3>
             <ul class="header_list" id="header_list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html?category=women's%20clothing">Women</a></li>
-                <li><a href="index.html?category=men's%20clothing">Men</a></li>
-                <li><a href="index.html?category=jewelery">Accessories</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html?category=women's%20clothing">Women</a></li>
+                <li><a href="home.html?category=men's%20clothing">Men</a></li>
+                <li><a href="home.html?category=jewelery">Accessories</a></li>
             </ul>
             <img src="./assets/bag.svg" alt="bag" class="bag" />
         </div>
+        <div class="sidebar-content">
+            <div class="sidebar" id="sidebar-content">
+                All Categories
+            </div>
+            <div>
+                <img src="./assets/jeans.jpg" alt="jeans" class="sidebar_img" />
+            </div>
+        </div>
     </header>
-
-
-
-
-
-
-
-
-    
+    <div class="searchBar">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search products...">
+    </div>
+    <div class="filters">
+        <div class="filter-category">
+            <div class="fill">Clothing / Outerwear</div>
+            <div class="fill">Filters</div>
+            <div class="fill">Categories</div>
+            <label><input type="checkbox" class="category-filter" value="men's clothing"> Men's Clothing</label>
+            <label><input type="checkbox" class="category-filter" value="women's clothing"> Women's Clothing</label>
+            <label><input type="checkbox" class="category-filter" value="jewelery"> Jewelery</label>
+            <label><input type="checkbox" class="category-filter" value="electronics"> Electronics</label>
+        </div>
+        <div>
+            <div class="results">
+                <div id="result-count" class="res"></div>
+                <div class="selectCategory">
+                    <select id="sort-options" class="select">
+                        <option value="none">Sort By Price</option>
+                        <option value="price-asc"> Low to High</option>
+                        <option value="price-desc"> High to Low</option>
+                        <!-- <option value="rating-asc"> Low to High</option>
+                            <option value="rating-desc"> High to Low</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="container" id="product-container"></a></div>
+            <button id="load-more" class="load-more">Load More</button>
+            <div id="loading" class="loading">Loading...</div>
+        </div>
+    </div>
     <section>
         <hr />
         <div class="footer">
@@ -78,5 +111,7 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
+
 </body>
+
 </html>
