@@ -11,8 +11,8 @@ body {
 
 .bag {
     height: 30px;
-    margin-top: 14px;
-    color: red;
+    margin-top: 22px;
+    width: 40px;
 }
 
 .header {
@@ -350,13 +350,13 @@ body {
     opacity: 90%;
 }
 
-.women{
+.women {
     margin: 10px 0;
     font-size: 18px;
     color: white;
 }
 
-.womens{
+.womens {
     margin: 10px 0;
     color: #777;
     white-space: nowrap;
@@ -376,7 +376,7 @@ body {
 
 .productd {
     width: 100%;
-    height: 150px;
+    height: 230px;
     position: relative;
 }
 
@@ -425,7 +425,7 @@ body {
     font-size: 40px;
 }
 
-.shopNow  {
+.shopNow {
     padding: 10px 60px;
     color: white;
     background-color: #007bff;
@@ -433,6 +433,10 @@ body {
     border-radius: 6px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.content-wraps {
+    display: none;
 }
 
 .page-content {
@@ -549,7 +553,39 @@ body {
     }
 
     .content-wrap {
-        display: block;
+        display: none;
+    }
+
+    .content-wraps {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .content-wraps .group {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        overflow: hidden;
+    }
+
+    .content-wraps .group::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: 1;
+    }
+
+    .content-wraps .title {
+        position: absolute;
+        top: 40%;
+        background: transparent;
+        text-align: center;
+        z-index: 999;
     }
 
     .title {
@@ -560,9 +596,6 @@ body {
         margin-top: 70px;
     }
 
-    .group {
-        display: none;
-    }
 }
 
 @media (max-width: 576px) {
@@ -606,6 +639,12 @@ body {
     .productss {
         flex: 1 1 100%;
     }
+    .content-wraps p {
+        font-size: 15px;
+    }
+    .content-wraps .title span{
+        font-size: 26px;
+    }
 }
 
 @media (max-width:320px) {
@@ -628,5 +667,12 @@ body {
 
     .conquer {
         width: 160px;
+    }
+
+    .content-wraps p {
+        font-size: 11px;
+    }
+    .content-wraps .title span{
+        font-size: 24px;
     }
 }

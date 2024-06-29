@@ -7,14 +7,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script defer src="./index.js"></script>
+    <script defer src="./scripts.js"></script>
 </head>
 
 <body>
     <header>
         <div class="header sticky-header">
             <div class="hamburger-menu" id="hamburger-menu">
-                ☰
+                <i class="fa fa-bars"></i>
             </div>
             <h3>VENIA</h3>
             <ul class="header_list" id="header_list">
@@ -23,7 +23,9 @@
                 <li><a href="home.html?category=men's%20clothing">Men</a></li>
                 <li><a href="home.html?category=jewelery">Accessories</a></li>
             </ul>
-            <img src="./assets/bag.svg" alt="bag" class="bag" />
+            <div class="bag">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </div>
     </header>
 
@@ -39,6 +41,19 @@
             </div>
             <div class="group">
                 <img src="./assets/group.png" alt="group">
+            </div>
+        </div>
+        <div class="content-wraps">
+            <div class="group">
+                <img src="./assets/groupBoys.png" alt="group">
+            </div>
+            <div class="title">
+                <span>Shop the new <br /> Signature collection </span>
+                <p>Lorem ipsum dolor sit amet. Et veritatis asperiores qui minus facilis est placeat accusantium non
+                    itaque enim? Id assumenda omnis non rerum quas est aliquid fuga et rerum quibusdam.</p>
+                <a href="./home.html">
+                    <button class="shopNow">Shop Now</button>
+                </a>
             </div>
         </div>
         <div class="productwrap">
